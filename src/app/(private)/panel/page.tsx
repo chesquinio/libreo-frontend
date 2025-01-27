@@ -34,7 +34,7 @@ export default function PanelPage() {
                 <h2 className="text-3xl text-gray-200 mb-3">Autorizacion</h2>
                 <p className="text-lg font-light text-white mb-5">
                   Debes conectar tu cuenta de Mercado Libre si deseas ver
-                  informacion
+                  informacion.
                 </p>
                 <a
                   href="https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=8217483335819429&redirect_uri=https://libreo.vercel.app/redirect"
