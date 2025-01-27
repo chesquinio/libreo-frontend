@@ -37,7 +37,7 @@ export default function PanelPage() {
                   informacion
                 </p>
                 <a
-                  href="https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=8217483335819429&redirect_uri=https://libreo.up.railway.app"
+                  href="https://auth.mercadolibre.com.ar/authorization?response_type=code&client_id=8217483335819429&redirect_uri=https://libreo.vercel.app/redirect"
                   target="_blank"
                   className="bg-yellow-400 text-white shadow py-2.5 px-3 rounded-lg hover:shadow-lg transition"
                 >
