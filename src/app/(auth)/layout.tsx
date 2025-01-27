@@ -6,16 +6,16 @@ export const metadata: Metadata = {
 };
 
 export default function AuthLayout({
-  auth,
   children,
-}: Readonly<{
-  auth: React.ReactNode;
+  modal,
+}: {
   children: React.ReactNode;
-}>) {
+  modal: React.ReactNode;
+}) {
   return (
     <>
+      {modal}
       {children}
-      {auth}
     </>
   );
 }

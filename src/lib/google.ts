@@ -28,7 +28,7 @@ export const googleSheetsUrl = (email: string) => {
       "106858510323-r0dtovbobq72agcrv3udcn8v7ieppi2o.apps.googleusercontent.com",
     access_type: "offline",
     response_type: "code",
-    login_hint: "willenerfrancis00@gmail.com",
+    login_hint: email,
     include_granted_scopes: "true",
     scope: [
       "https://www.googleapis.com/auth/drive",
