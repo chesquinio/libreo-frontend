@@ -1,4 +1,5 @@
 "use client";
+
 import { useAuth } from "@/context/auth-context";
 import { redirect } from "next/navigation";
 
@@ -9,7 +10,7 @@ export default function AuthGate({
 }>) {
   const { loading, isAuth } = useAuth();
 
-  if (loading) return <p>Cargando...</p>;
+  if (loading) return <div>Cargando...</div>;
   if (!loading && !isAuth) return redirect("/iniciar-sesion");
 
   return <>{children}</>;

@@ -1,4 +1,5 @@
-import PanelNavigation from "@/components/global/panel-navigation";
+import { AppSidebar } from "@/components/global/sidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 
 export default function PanelLayout({
   children,
@@ -6,9 +7,12 @@ export default function PanelLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <PanelNavigation />
-      {children}
-    </>
+    <SidebarProvider>
+      <AppSidebar />
+      <main className="w-full h-full">
+        <SidebarTrigger />
+        {children}
+      </main>
+    </SidebarProvider>
   );
 }
